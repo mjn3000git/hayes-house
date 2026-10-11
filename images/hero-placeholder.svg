@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Placeholder hero image">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fb3d9"/><stop offset=".55" stop-color="#3e6d9c"/><stop offset="1" stop-color="#0b2545"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#g)"/>
+<path d="M0 594.0 L224.00000000000003 495.00000000000006 L416.0 540.0 L672.0 423.0 L927.9999999999999 522.0 L1152.0 459.0 L1408.0 540.0 L1600 504.00000000000006" fill="none" stroke="#dbe7f3" stroke-width="4.0" opacity=".7"/>
+<rect x="0" y="630.0" width="1600" height="270.0" fill="#13315c" opacity=".55"/>
+<path d="M0 702.0 q100.0 -18.0 200.0 0 t200.0 0 t200.0 0 t200.0 0 t200.0 0 t200.0 0 t200.0 0 t200.0 0" fill="none" stroke="#ffffff" stroke-width="2" opacity=".35"/>
+<g transform="translate(1152.0 540.0) scale(2.2)" fill="#ffffff" opacity=".85"><path d="M20 0 L20 40 L2 40 Z"/><path d="M23 6 L23 40 L40 40 Z" opacity=".75"/><path d="M0 44 H44 L38 52 H6 Z"/></g>
+</svg>

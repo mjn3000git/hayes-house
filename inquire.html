@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inquire | The Hayes House</title>
+  <meta name="description" content="Check availability and inquire about renting The Hayes House.">
+  <meta name="robots" content="noindex"> <!-- DRAFT: remove this line at launch -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"> <!-- optional web fonts; system fallbacks are used offline -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="draft-banner" role="note">Draft site — anything marked PLACEHOLDER is not real yet.</div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 48" width="28" height="28" focusable="false"><path d="M23 7 V33 H10 Z" fill="currentColor"/><path d="M26 13 V33 H37 Z" fill="currentColor" opacity=".6"/><path d="M7 36 H41 L36.5 41 H11.5 Z" fill="currentColor"/></svg></span>
+        <span><span class="logo-name" data-site="name">The Hayes House</span><span class="logo-sub">Schroon Lake, NY · text logo placeholder</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="house.html">The House</a></li>
+          <li><a href="gallery.html">Photos</a></li>
+          <li><a href="rates.html">Rates &amp; Availability</a></li>
+          <li><a href="location.html">Location &amp; Area</a></li>
+          <li><a href="rules.html">House Rules</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="inquire.html" class="nav-cta">Inquire</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Check Availability / Inquire</h1>
+        <p>Tell us your dates and group size, and we'll get back to you directly.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <h2>Contact the owners</h2>
+        <p>Email: <span class="ph">email TBD</span><br>Phone: <span class="ph">phone TBD</span></p>
+        <p class="small">Prefer a platform? <a data-platform="airbnb" href="#" hidden>Airbnb listing</a> <a data-platform="vrbo" href="#" hidden>VRBO listing</a> <span class="ph">optional links, hidden until set in js/main.js</span></p>
+
+        <h2>Inquiry form</h2>
+        <form class="inquiry" id="inquiry-form" action="#" method="post" novalidate>
+          <p class="form-note"><strong>PLACEHOLDER:</strong> this form isn't connected to anything yet, and submitting it sends nothing. A form handler (e.g. Formspree, Netlify Forms, or a booking tool) still needs to be chosen.</p>
+          <div class="form-row">
+            <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="form-row">
+            <div><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div><label for="guests">Number of guests</label><input id="guests" name="guests" type="number" min="1"></div>
+          </div>
+          <div class="form-row">
+            <div><label for="arrive">Arrival date</label><input id="arrive" name="arrive" type="date"></div>
+            <div><label for="depart">Departure date</label><input id="depart" name="depart" type="date"></div>
+          </div>
+          <div>
+            <label for="stay">Type of stay</label>
+            <select id="stay" name="stay"><option>Full season</option><option>31 days or more</option><option>Returning guest, same dates</option><option>Other</option></select>
+          </div>
+          <div><label for="message">Message</label><textarea id="message" name="message" rows="5"></textarea></div>
+          <div><button class="btn" type="submit">Send inquiry</button></div>
+          <p id="form-status" role="status" tabindex="-1" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <svg class="ridge" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 50 L110 32 L190 42 L320 14 L430 38 L540 24 L650 44 L780 10 L900 36 L1010 22 L1120 40 L1200 30" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+    <div class="wrap footer-grid">
+      <div>
+        <p><span class="logo-name" data-site="name">The Hayes House</span>
+        A furnished seasonal rental on the west shore of Schroon Lake, in New York's Adirondacks.</p>
+      </div>
+      <div>
+        <p><strong>Contact</strong><br>
+        Email: <span class="ph">email TBD</span><br>
+        Phone: <span class="ph">phone TBD</span></p>
+      </div>
+      <div>
+        <p><a href="inquire.html">Check availability / Inquire</a><br>
+        <a href="rates.html">Rates &amp; availability</a><br>
+        <a href="rules.html">House rules &amp; policies</a></p>
+      </div>
+    </div>
+    <p class="wrap small">© <span data-year>2026</span> <span data-site="name">The Hayes House</span>. Draft — not yet published.</p>
+  </footer>
+</body>
+</html>
