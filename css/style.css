@@ -75,7 +75,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Hero */
 .hero { color: var(--white); padding: 8rem 0 7rem; position: relative;
-  background: linear-gradient(100deg, rgba(11,37,69,.92) 0%, rgba(11,37,69,.7) 45%, rgba(11,37,69,.15) 100%), url("../images/hero-placeholder.svg") center/cover no-repeat; }
+  background: linear-gradient(100deg, rgba(11,37,69,.92) 0%, rgba(11,37,69,.7) 45%, rgba(11,37,69,.15) 100%), url("../images/hero.svg") center/cover no-repeat; }
 .hero h1 { color: var(--white); font-weight: 500; }
 .hero p { font-size: 1.15rem; max-width: 38rem; color: #e6eef7; }
 .hero .small { color: #e6eef7; }
