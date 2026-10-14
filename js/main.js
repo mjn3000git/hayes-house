@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var status = document.getElementById("form-status");
-      status.textContent = "This form is a placeholder and is not connected yet — nothing was sent. Please use the contact info above once it's published.";
+      status.textContent = "Online requests are not open just yet, so nothing was sent. Please call us at 518-832-9174.";
       status.focus();
     });
   }
