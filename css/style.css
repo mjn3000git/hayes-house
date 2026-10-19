@@ -113,6 +113,14 @@ img { max-width: 100%; height: auto; display: block; }
 .gallery img { aspect-ratio: 4/3; object-fit: cover; width: 100%; }
 .gallery figcaption { padding: .75rem 1rem; font: 500 .9rem var(--sans); color: var(--navy); }
 
+/* Photos */
+.feature-photo { margin: 1.5rem 0 2rem; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); background: var(--white); }
+.feature-photo img { width: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: 50% 35%; }
+.feature-photo figcaption, .photo-pair figcaption { padding: .75rem 1rem; font: 500 .9rem var(--sans); color: var(--navy); }
+.photo-pair { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: 1.5rem 0 2rem; }
+.photo-pair figure { margin: 0; background: var(--white); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.photo-pair img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+
 /* Tables */
 .table-wrap { overflow-x: auto; box-shadow: var(--shadow); border-radius: var(--radius); }
 table { border-collapse: collapse; width: 100%; background: var(--white); }
