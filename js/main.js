@@ -1,10 +1,10 @@
-/* The Hayes House — small site script. Works when opened straight from disk. */
+/* The Hayes House: small site script. Works when opened straight from disk. */
 
 // ===== EDIT SITE-WIDE SETTINGS HERE =====
 // Changing SITE_NAME updates every element marked data-site="name".
 var SITE = {
   name: "The Hayes House",           // PLACEHOLDER name
-  // Optional platform links — leave "" to keep those buttons hidden.
+  // Optional platform links: leave "" to keep those buttons hidden.
   airbnbUrl: "",                      // PLACEHOLDER e.g. "https://www.airbnb.com/rooms/..."
   vrboUrl: ""                         // PLACEHOLDER
 };
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (a.getAttribute("href") === here) a.setAttribute("aria-current", "page");
   });
 
-  // Inquiry form — NOT CONNECTED to any service. Shows a notice only; nothing is sent.
+  // Inquiry form: NOT CONNECTED to any service. Shows a notice only; nothing is sent.
   var form = document.getElementById("inquiry-form");
   if (form) {
     form.addEventListener("submit", function (e) {

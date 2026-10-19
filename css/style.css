@@ -1,4 +1,4 @@
-/* The Hayes House — shared styles (coastal / nautical theme). Edit colors in :root. */
+/* The Hayes House: shared styles (coastal / nautical theme). Edit colors in :root. */
 :root {
   --navy: #0b2545;        /* deep navy */
   --navy-2: #13315c;
@@ -42,7 +42,7 @@ img { max-width: 100%; height: auto; display: block; }
 .skip { position: absolute; left: -999px; top: 0; background: #fff; padding: .5rem 1rem; z-index: 100; }
 .skip:focus { left: 1rem; }
 
-/* Placeholder callouts — intentionally obvious */
+/* Placeholder callouts, intentionally obvious */
 .ph { display: inline; background: #fff7e6; color: #5a4214; border: 1px solid #e3c98f; border-left: 4px solid var(--brass-dark);
   padding: .1rem .5rem; border-radius: 2px; font: 500 .9em/1.6 var(--sans); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .ph::before { content: "PLACEHOLDER · "; font-weight: 700; letter-spacing: .06em; font-size: .85em; color: #8a5a00; }
