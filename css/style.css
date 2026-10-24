@@ -6,8 +6,10 @@
   --sky: #a3b1c0;
   --mist: #eef1f4;        /* pale Naval tint */
   --white: #ffffff;
-  --brass: #c9a96e;       /* restrained brass/sand accent */
-  --brass-dark: #a8874d;
+  --bronze: #54504a;      /* SW 7048 Urbane Bronze */
+  --bronze-tint: #d8d3cb; /* light Urbane Bronze tint */
+  --brass: var(--bronze);
+  --brass-dark: var(--bronze);
   --ink: #222c37;
   --muted: #5d6772;
   --line: #dde2e7;
@@ -48,14 +50,14 @@ img { max-width: 100%; height: auto; display: block; }
 .ph::before { content: "PLACEHOLDER · "; font-weight: 700; letter-spacing: .06em; font-size: .85em; color: #8a5a00; }
 .ph.confirm { background: #eceff3; border-color: #b5c0cc; border-left-color: var(--steel); color: var(--navy); }
 .ph.confirm::before { content: "WORDING TO CONFIRM · "; color: var(--steel); }
-.draft-banner { background: var(--brass); color: var(--navy); text-align: center; font: 600 .78rem var(--sans); letter-spacing: .08em; text-transform: uppercase; padding: .45rem 1rem; }
+.draft-banner { background: var(--bronze-tint); color: var(--bronze); text-align: center; font: 600 .78rem var(--sans); letter-spacing: .08em; text-transform: uppercase; padding: .45rem 1rem; }
 
 /* Header */
 .site-header { background: rgba(255,255,255,.96); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; }
 .header-inner { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.75rem; }
 .logo { display: flex; align-items: center; gap: .75rem; color: var(--navy); text-decoration: none; }
 .logo:hover { color: var(--navy); }
-.logo-mark { width: 2.6rem; height: 2.6rem; border-radius: 50%; background: var(--navy); color: var(--white); display: grid; place-items: center; box-shadow: inset 0 0 0 2px var(--brass); }
+.logo-mark { width: 2.6rem; height: 2.6rem; border-radius: 50%; background: var(--navy); color: var(--white); display: grid; place-items: center; box-shadow: inset 0 0 0 2px var(--bronze-tint); }
 .logo-name { font: 600 1.6rem/1.1 var(--serif); letter-spacing: .01em; display: block; }
 .logo-sub { font: 500 .68rem var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); display: block; margin-top: .15rem; }
 .nav-toggle { display: none; background: transparent; border: 1px solid var(--navy); color: var(--navy); border-radius: var(--radius); padding: .45rem .9rem; font: 600 .8rem var(--sans); letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
@@ -95,7 +97,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* Buttons */
 .btn { display: inline-block; background: var(--navy); color: var(--white); text-decoration: none; padding: .9rem 1.6rem; border-radius: var(--radius); font: 600 .82rem var(--sans); letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--navy); cursor: pointer; transition: background .2s, color .2s; }
 .btn:hover { background: var(--steel); border-color: var(--steel); color: var(--white); }
-.hero .btn { background: var(--brass); border-color: var(--brass); color: var(--navy); }
+.hero .btn { background: var(--bronze-tint); border-color: var(--bronze-tint); color: var(--navy); }
 .hero .btn:hover { background: var(--white); border-color: var(--white); }
 .btn.secondary, .hero .btn.secondary { background: transparent; border-color: currentColor; color: inherit; }
 .btn.secondary:hover { background: var(--navy); color: var(--white); }
@@ -156,7 +158,7 @@ ul.checks li::marker { color: var(--brass-dark); }
 /* Footer */
 .site-footer { background: var(--navy); color: #dee3e8; padding: 0 0 1.5rem; margin-top: 4rem; }
 .site-footer .ridge { display: block; width: 100%; height: 44px; color: var(--sky); opacity: .45; margin-bottom: 2.25rem; }
-.site-footer a { color: var(--brass); }
+.site-footer a { color: var(--bronze-tint); }
 .site-footer a:hover { color: var(--white); }
 .site-footer .logo-name { color: var(--white); margin-bottom: .4rem; }
 .site-footer .small { color: #a7b1bc; border-top: 1px solid rgba(255,255,255,.12); padding-top: 1.25rem; margin-top: 1.5rem; }
