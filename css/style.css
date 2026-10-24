@@ -77,14 +77,14 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Hero */
 .hero { color: var(--white); padding: 22rem 0 2.5rem; position: relative; display: flex; align-items: flex-end;
-  background: linear-gradient(to top, rgba(47,61,76,.45) 0%, rgba(47,61,76,0) 45%), url("../images/front-of-house.jpg") 50% 45%/cover no-repeat; }
+  background: linear-gradient(to top, rgba(47,61,76,.45) 0%, rgba(47,61,76,0) 45%), url("../images/lake-shoreline.jpg") 50% 40%/cover no-repeat; }
 .hero .wrap { width: 100%; }
 .hero-panel { display: inline-block; max-width: 25rem; background: rgba(47,61,76,.6); padding: .9rem 1.2rem 1rem; border-radius: var(--radius); }
 .hero h1 { color: var(--white); font-weight: 500; font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0 0 .4rem; }
 .hero p { font-size: .98rem; max-width: 28rem; color: #e9edf1; margin: 0 0 .4rem; }
 .hero .btn-row { margin-top: .7rem; gap: .6rem; }
 .hero .btn { padding: .6rem 1rem; font-size: .72rem; }
-@media (max-width: 700px) { .hero { background-image: linear-gradient(to top, rgba(47,61,76,.45) 0%, rgba(47,61,76,0) 45%), url("../images/front-of-house-1000.jpg"); } }
+@media (max-width: 700px) { .hero { background-image: linear-gradient(to top, rgba(47,61,76,.45) 0%, rgba(47,61,76,0) 45%), url("../images/lake-shoreline-800.jpg"); } }
 @media (max-width: 600px) { .hero { padding-top: 17rem; background-color: var(--navy); background-size: 100% 100%, 150% auto; background-position: center, 42% top; } .hero-panel { display: block; padding: .9rem 1rem; } }
 .hero .small { color: #e9edf1; }
 .page-hero { background: linear-gradient(120deg, var(--navy) 0%, var(--navy-2) 55%, var(--steel) 100%); color: var(--white); padding: 4.5rem 0 4.75rem; position: relative; }
@@ -112,6 +112,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Gallery */
 .gallery { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.gallery.three { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 .gallery figure { margin: 0; background: var(--white); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); }
 .gallery img { aspect-ratio: 4/3; object-fit: cover; width: 100%; }
 .gallery figcaption { padding: .75rem 1rem; font: 500 .9rem var(--sans); color: var(--navy); }
