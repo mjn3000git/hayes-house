@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"> <!-- optional web fonts; system fallbacks are used offline -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -52,8 +52,10 @@
         Phone: <a href="tel:+15188329174">518-832-9174</a></p>
 
         <h2>Send us a note</h2>
-        <form class="inquiry" id="inquiry-form" action="#" method="post" novalidate>
-          <p class="form-note">Online requests will open soon. Until then, the quickest way to reach us is by phone at <a href="tel:+15188329174">518-832-9174</a>.</p>
+        <form class="inquiry" id="inquiry-form" action="https://formspree.io/f/myeeepde" method="POST">
+          <p class="form-note">Send a request below, or call <a href="tel:+15188329174">518-832-9174</a>.</p>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="41 Hayes stay request">
           <div class="form-row">
             <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
             <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>

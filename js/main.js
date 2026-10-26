@@ -39,14 +39,27 @@ document.addEventListener("DOMContentLoaded", function () {
     if (a.getAttribute("href") === here) a.setAttribute("aria-current", "page");
   });
 
-  // Inquiry form: NOT CONNECTED to any service. Shows a notice only; nothing is sent.
+  // Inquiry form: sends to Formspree (submissions go to Matthew's email, never shown on the site).
+  var FORMSPREE_ID = "myeeepde";
   var form = document.getElementById("inquiry-form");
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var status = document.getElementById("form-status");
-      status.textContent = "Online requests are not open just yet, so nothing was sent. Please call us at 518-832-9174.";
-      status.focus();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) btn.disabled = true;
+      status.textContent = "Sending...";
+      fetch("https://formspree.io/f/" + FORMSPREE_ID, {
+        method: "POST", body: new FormData(form), headers: { "Accept": "application/json" }
+      }).then(function (r) {
+        if (r.ok) { form.reset(); status.textContent = "Thank you. Your request was sent, and we'll be in touch soon."; }
+        else { status.textContent = "Sorry, something went wrong. Please call 518-832-9174."; }
+      }).catch(function () {
+        status.textContent = "Sorry, something went wrong. Please call 518-832-9174.";
+      }).then(function () { if (btn) btn.disabled = false; status.focus(); });
     });
+  }
+});
   }
 });
