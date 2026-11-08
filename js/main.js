@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
         method: "POST", body: new FormData(form), headers: { "Accept": "application/json" }
       }).then(function (r) {
         if (r.ok) { form.reset(); status.textContent = "Thank you. Your request was sent, and we'll be in touch soon."; }
-        else { status.textContent = "Sorry, something went wrong. Please call 518-832-9174."; }
+        else { status.textContent = "Sorry, something went wrong. Please call 518-868-6689."; }
       }).catch(function () {
-        status.textContent = "Sorry, something went wrong. Please call 518-832-9174.";
+        status.textContent = "Sorry, something went wrong. Please call 518-868-6689.";
       }).then(function () { if (btn) btn.disabled = false; status.focus(); });
     });
   }
